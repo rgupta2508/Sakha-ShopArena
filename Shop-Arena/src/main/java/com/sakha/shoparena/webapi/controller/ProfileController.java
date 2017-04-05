@@ -17,7 +17,7 @@ public class ProfileController {
 	@RequestMapping(value = "/test", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody String getTestData(@RequestBody String testString)
 	{
-		String result="hello word"+testString;
+		//String result="hello word"+testString;
 
 
 		return result;
