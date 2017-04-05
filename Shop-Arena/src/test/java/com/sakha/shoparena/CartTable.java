@@ -8,9 +8,7 @@ import org.hibernate.cfg.Configuration;
 public class CartTable {
 	public static void main(String[] k)
 	{
-		Configuration cfg = new Configuration();
-		cfg.configure("hibernate.cfg.xml");
-		SessionFactory factory = cfg.buildSessionFactory();
+		SessionFactory factory = HibernateUtil.getSessionFactory();
 		Session session = factory.openSession();
 		Transaction tx = session.beginTransaction();
 		UserDetails ud= new UserDetails();
