@@ -33,6 +33,9 @@ class NavigationBar extends Component {
           </div>
           <div className="collapse navbar-collapse">
             <ul className="nav navbar-nav navbar-right">
+              <li>
+                <Link to="/about" className="navbar-brand">About Us</Link>
+              </li>
               { !isAuthenticated && <li>
                 <Link
                   to={{
