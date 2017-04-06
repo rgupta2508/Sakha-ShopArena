@@ -13,7 +13,7 @@ export function setCurrentUser(user) {
 
 export function userLoginRequest(authData) {
   return dispatch => {
-    //uncomment the below line once the API is ready
+    //uncomment the below line once the AP is ready
     let data = 'data='+JSON.stringify(authData);
     return axios.post('/api/user/login',data).then(res => {
       console.log("auth login " , res);
