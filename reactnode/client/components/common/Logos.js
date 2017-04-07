@@ -19,3 +19,13 @@ export class HeaderLogo extends Component {
     )
   }
 }
+
+export class RegistrationLogo extends Component {
+  render() {
+    return (
+      <div className="large-logo">
+        Registration
+      </div>
+    );
+  }
+}
