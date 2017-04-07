@@ -88,7 +88,7 @@ class LoginForm extends Component {
                   <div className="col-xs-12">
                     <TextFieldGroup
                       error={errors.mobile_no}
-                      label="Phone"
+                      label="Email"
                       onChange={this.onChange}
                       value={mobile_no}
                       field="mobile_no"

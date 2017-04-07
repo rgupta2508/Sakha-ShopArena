@@ -3,16 +3,16 @@ import isEmpty from 'lodash/isEmpty';
 
 export default function validateInput(data) {
   let errors = {};
-  if(data.mobile_no.length != 10) {
-    errors.mobile_no = "Mobile Number should contain 10 digits";
-  }
+  // if(data.mobile_no.length != 10) {
+  //   errors.mobile_no = "email id should contain @";
+  // }
 
-  if(!Validator.isNumeric(data.mobile_no)) {
-    errors.mobile_no = "Mobile number should contain only numbers";
+  if(!Validator.isEmail(data.mobile_no)) {
+    errors.mobile_no = "Should enter a valid email";
   }
 
   if(Validator.isEmpty(data.mobile_no)) {
-    errors.mobile_no = "Please enter mobile number";
+    errors.mobile_no = "Please enter Email id";
   }
 
   if( data.password.length < 6 || data.password.length > 15 ) {
