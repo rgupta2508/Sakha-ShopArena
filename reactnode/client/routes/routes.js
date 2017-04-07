@@ -5,6 +5,7 @@ import App from '../App';
 import Login from '../components/Login/Login';
 import Home from '../components/Home';
 import About from '../components/About';
+import Registration from '../components/Registration/Registration';
 
 import requireAuth from '../utils/requireAuth';
 
@@ -13,5 +14,6 @@ export default (
     <IndexRoute component={Login} />
     <Route path= "home" component={Home} />
     <Route path= "about" component={About} />
+    <Route path= "registration" component={Registration} />
   </Route>
 )

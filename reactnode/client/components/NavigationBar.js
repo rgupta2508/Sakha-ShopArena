@@ -36,6 +36,9 @@ class NavigationBar extends Component {
               <li>
                 <Link to="/about" className="navbar-brand">About Us</Link>
               </li>
+              <li>
+                <Link to="/registration" className="navbar-brand">Registration</Link>
+              </li>
               { !isAuthenticated && <li>
                 <Link
                   to={{
